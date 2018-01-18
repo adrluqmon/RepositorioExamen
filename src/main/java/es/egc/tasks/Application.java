@@ -18,7 +18,11 @@ public class Application {
     @Bean
     CommandLineRunner init(TaskRepository taskService) {
         return (evt) -> {
+<<<<<<< HEAD
             logger.info("Initializing task-manager...");
+=======
+            logger.info("Iniciando Aplicacion...");
+>>>>>>> next
 
             taskService.save(new Task("Add pom.xml", "Exam"));
             taskService.save(new Task("Add Dockerfile", "Exam"));
